@@ -1,0 +1,185 @@
+import i2c_pkg ::*;
+interface i2c_if       #(
+      int ADDR_WIDTH = 7,                                
+      int I2C_DATA_WIDTH = 8                                
+      )
+(
+  input tri scl,
+  inout triand sda
+  );
+  
+
+// ****************************************************************************
+logic sda_r;
+logic slv_f;
+logic master_control;
+logic sda_o;
+//assign sda = (slv_f & sda_r)|(~slv_f & sda);
+assign sda= master_control ? 1'bz : sda_o;
+bit start,stop;
+
+initial 
+begin
+
+master_control =1;
+sda_o=0;
+
+end
+
+//typedef enum bit {wr,rd}i2c_op_t ; 
+always @(negedge sda)
+ begin
+
+		if(scl==1)
+		begin
+			start=1;
+			stop=0;
+			$display("start condition start ");
+		end
+end
+
+
+always @(posedge sda)
+begin
+
+		if(scl==1)
+		begin
+			stop=1;
+			start=0;
+			//stop=1;
+			$display("stop condition");
+		end
+end		
+
+task wait_for_i2c_transfer ( output i2c_op_t op, output bit [I2C_DATA_WIDTH-1:0] write_data []);
+
+bit[6:0] address;
+bit[7:0] temp;
+int i;
+i=0;
+temp=0;
+write_data = new[32];
+$display("Start");
+
+wait(start==1);
+	start=0;
+
+@(posedge scl) $display("sda= %d",sda);
+$display("Enter start");
+
+repeat(7)
+	@(posedge scl)
+		address={address,sda};//Concatenates sda to address
+		//$display("address = %p",address);
+
+$display("Address = %b",address);
+
+@(posedge scl)
+	begin
+	if(sda==1)
+	//begin
+		op=rd;
+		//$display("op=read...To call task provide read data");
+//	end
+		
+	else 
+	begin
+		op=wr;
+		$display("op=write");
+	end
+	end
+		
+		
+@(negedge scl)//ACK
+	begin
+	//slv_f=1;
+	//sda_r=0;//assign sda=0;
+	master_control=0;
+	sda_o=0;
+	end
+@(negedge scl)//ACK for 1 clk 
+	master_control=1;	//slv_f=0;
+	
+if(op==rd)
+return;
+
+while((start==0)&&(stop==0)) begin
+repeat(8)
+	@(posedge scl)
+		temp={temp,sda};
+	write_data[i]='{temp};
+        $display("write_data = %d",write_data[i]);
+	i++;
+
+@(negedge scl)//ACK
+	begin
+	master_control=0; //slv_f=1;
+	sda_o=0;//sda_r=0;//assign sda=0;
+	end
+@(negedge scl)//ACK for 1 clk 
+	master_control=1;	//slv_f=0;
+end	
+
+endtask
+
+
+
+//**************************************************************************
+
+
+/*
+task provide_read_data ( input bit [I2C_DATA_WIDTH-1:0] read_data [], output bit transfer_complete);
+
+bit[6:0] address;
+bit[7:0] temp;
+int i;
+i=0;
+temp=0;
+
+/*wait(start==1)
+start=0;
+repeat(7)
+begin
+	@(posedge scl)
+		address={address,sda};//Concatenates sda to address
+end
+$display("Address = %b",address);
+
+@(posedge scl)
+	if(sda==1)
+	begin
+		$display("op=read...%b",op);
+	end
+		
+	else 
+	begin
+//		op=wr;
+		$display("op=write...%b",op);
+	end
+		
+		
+@(negedge scl)//ACK
+	begin
+	slv_f=1;
+	sda_r=0;//assign sda=0;
+	end
+@(negedge scl);//ACK for 1 clk 
+*/
+// while((start==0)&&(stop==0))	
+// begin
+// repeat(8)
+// @(posedge scl)
+// sda_r=read_data[i];
+// $display("sda_r = %b",sda_r);
+// $display("read_data = %b",read_data[i]);
+// temp={temp,sda_r};
+// i++;
+// end
+
+//$display("temp = %b",temp);
+
+
+//endtask
+
+endinterface
+

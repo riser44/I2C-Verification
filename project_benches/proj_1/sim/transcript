@@ -1,0 +1,505 @@
+# //  Questa Sim
+# //  Version 2020.4_1 linux Nov  6 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -i -classdebug -msgmode both -do "set NoQuitOnFinish 1; do wave.do" optimized_debug_top_tb 
+# Start time: 11:31:02 on Mar 22,2022
+# Loading sv_std.std
+# Loading work.i2c_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.i2c_if_sv_unit(fast)
+# Loading work.i2c_if(fast__1)
+# Loading work.wb_if(fast__1)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.iicmb_m_wb(str)#1
+# Loading work.wishbone(rtl)#1
+# Loading ieee.numeric_std(body)
+# Loading work.iicmb_pkg(body)
+# Loading work.regblock(rtl)#1
+# Loading work.iicmb_int_pkg(body)
+# Loading work.iicmb_m(str)#1
+# Loading work.mbyte(rtl)#1
+# Loading work.mbit(rtl)#1
+# Loading work.conditioner_mux(str)#1
+# Loading work.conditioner(str)#1
+# Loading work.filter(rtl)#1
+# Loading work.bus_state(rtl)#1
+# set NoQuitOnFinish 1
+# 1
+#  do wave.do
+run -all
+# Stop Condition hit
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :   0
+#  Write data is :   1
+#  Write data is :   2
+#  Write data is :   3
+#  Write data is :   4
+#  Write data is :   5
+#  Write data is :   6
+#  Write data is :   7
+#  Write data is :   8
+#  Write data is :   9
+#  Write data is :  10
+#  Write data is :  11
+#  Write data is :  12
+#  Write data is :  13
+#  Write data is :  14
+#  Write data is :  15
+#  Write data is :  16
+#  Write data is :  17
+#  Write data is :  18
+#  Write data is :  19
+#  Write data is :  20
+#  Write data is :  21
+#  Write data is :  22
+#  Write data is :  23
+#  Write data is :  24
+#  Write data is :  25
+#  Write data is :  26
+#  Write data is :  27
+#  Write data is :  28
+#  Write data is :  29
+#  Write data is :  30
+#  Write data is :  31
+# Stop Condition hit
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read Data is : 100
+# Read Data is : 101
+# Read Data is : 102
+# Read Data is : 103
+# Read Data is : 104
+# Read Data is : 105
+# Read Data is : 106
+# Read Data is : 107
+# Read Data is : 108
+# Read Data is : 109
+# Read Data is : 110
+# Read Data is : 111
+# Read Data is : 112
+# Read Data is : 113
+# Read Data is : 114
+# Read Data is : 115
+# Read Data is : 116
+# Read Data is : 117
+# Read Data is : 118
+# Read Data is : 119
+# Read Data is : 120
+# Read Data is : 121
+# Read Data is : 122
+# Read Data is : 123
+# Read Data is : 124
+# Read Data is : 125
+# Read Data is : 126
+# Read Data is : 127
+# Read Data is : 128
+# Read Data is : 129
+# Read Data is : 130
+# Read Data is : 131
+# Stop Condition hit
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  64
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  63
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  65
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  62
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  66
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  61
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  67
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  60
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  68
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  59
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  69
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  58
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  70
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  57
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  71
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  56
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  72
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  55
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  73
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  54
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  74
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  53
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  75
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  52
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  76
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  51
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  77
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  50
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  78
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  49
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  79
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  48
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  80
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  47
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  81
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  46
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  82
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  45
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  83
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  44
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  84
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  43
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  85
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  42
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  86
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  41
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  87
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  40
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  88
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  39
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  89
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  38
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  90
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  37
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  91
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  36
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  92
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  35
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  93
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  34
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  94
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  33
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  95
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  32
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  96
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  31
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  97
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  30
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  98
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  29
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is :  99
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  28
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 100
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  27
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 101
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  26
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 102
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  25
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 103
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  24
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 104
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  23
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 105
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  22
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 106
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  21
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 107
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  20
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 108
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  19
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 109
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  18
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 110
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  17
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 111
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  16
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 112
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  15
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 113
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  14
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 114
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  13
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 115
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  12
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 116
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  11
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 117
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :  10
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 118
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   9
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 119
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   8
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 120
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   7
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 121
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   6
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 122
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   5
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 123
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   4
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 124
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   3
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 125
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   2
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 126
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   1
+# Start Condition hit
+# I2C_BUS WRITE Transfer:
+#  Write data is : 127
+# Start Condition hit
+# I2C_BUS READ Transfer:
+# Read data is :   0
+# Stop Condition hit
+# ** Note: $finish    : ../testbench/top.sv(234)
+#    Time: 31003705 ns  Iteration: 1  Instance: /top
+# 1
+# Break in NamedBeginStat test_flow at ../testbench/top.sv line 234
+# End time: 11:32:34 on Mar 22,2022, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 0
